@@ -24,7 +24,7 @@ class CarDetection:
             self.model.half()  # to FP16
 
     @torch.inference_mode()
-    def detect(self, original_image):
+    def detect(self, original_image:np.ndarray):
         # Padded resize
         img = letterbox(original_image, self.imgsz, stride=self.stride)[0]
 
