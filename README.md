@@ -4,7 +4,7 @@ Create a yolov7 model detecting cars in images, using model YOLOv7
 ## Preparation
 To run it, you need to download the weight (and a sample image incase you need it) by:
 ``` 
-pip3 install dvc[gdrive]==2.9.2 && dvc pull
+pip install dvc && dvc pull
 ```
 
 ## How to run
